@@ -14,7 +14,7 @@
         android:layout_height="80dp"
         android:text="Forward"
         android:id="@+id/forward_btn"
-        android:layout_marginTop="70dp"
+
         android:layout_alignParentTop="true"
         android:layout_toLeftOf="@+id/forward_right_btn"
         android:layout_toStartOf="@+id/forward_right_btn" />
@@ -47,10 +47,18 @@
         android:layout_marginTop="0dp" />
 
     <Button
+        android:id="@+id/bluetooth_connect_btn"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:text="Connect to Bluetooth Device"
-        android:id="@+id/bluetooth_connect_btn"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:text="Connect BT" />
+
+    <Button
+        android:id="@+id/bluetooth_disconnect_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:text="DISCONNECT"
+        android:layout_alignParentRight="true" />
 </RelativeLayout>
