@@ -1,13 +1,15 @@
-package com.example.controlapp310;
+/* Author:  Michael Ressler
+ * Program: Control Application
+ * Class:   EGEN 310
+*/
 
+package com.example.controlapp310;
 
 import android.app.ProgressDialog;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothSocket;
-import android.content.Intent;
 import android.os.AsyncTask;
-import android.os.Build;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.MotionEvent;
@@ -21,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     //private final String DEVICE_ADDRESS = "98:D3:11:FC:48:82"; //MAC Address of Bluetooth Module
 
-    Button forward_btn, forward_left_btn, forward_right_btn, reverse_btn, reverse_left_btn, reverse_right_btn, bluetooth_connect_btn, disconnect;
+    Button forward_btn, forward_left_btn, forward_right_btn, reverse_btn, reverse_left_btn, reverse_right_btn, connect_btn, disconnect_btn;
     String address = null;
     String err = null;
     private ProgressDialog progress;
@@ -49,8 +51,8 @@ public class MainActivity extends AppCompatActivity {
         forward_left_btn = (Button) findViewById(R.id.forward_left_btn);
         forward_right_btn = (Button) findViewById(R.id.forward_right_btn);
         reverse_btn = (Button) findViewById(R.id.reverse_btn);
-        bluetooth_connect_btn = (Button) findViewById(R.id.bluetooth_connect_btn);
-        disconnect = (Button) findViewById(R.id.bluetooth_disconnect_btn);
+        connect_btn = (Button) findViewById(R.id.bluetooth_connect_btn);
+        disconnect_btn = (Button) findViewById(R.id.bluetooth_disconnect_btn);
 
                                 //calls class to connect
 
@@ -197,7 +199,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        disconnect.setOnClickListener(new View.OnClickListener(){
+        disconnect_btn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v)
             {
@@ -211,10 +213,10 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //Button that connects the device to the bluetooth module when pressed
-        bluetooth_connect_btn.setOnClickListener(new View.OnClickListener() {
+        connect_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                bluetooth_connect_btn.setOnClickListener(this);
+                connect_btn.setOnClickListener(this);
                 if(Socket == null)
                 {
                     new ConnectBT().execute();
