@@ -31,6 +31,8 @@ If there is a Gradle Migration Settings error, make sure this line
 ```
 is within `\path\to\project\.idea\gradle.xml`.
 
+## Source Code README 
+[README.md](ControlApp310/app/README.md)
 ### Works Cited
 
  - [Google](www.google.com)
