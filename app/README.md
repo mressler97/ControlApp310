@@ -4,7 +4,7 @@ Read this if you want to edit the source code.
 * [MainAcivity file](/app/src/main/java/com/example/controlapp310/MainActivity.java/)
 * [activity_main.xml](/app/src/main/res/layout/activity_main.xml/)
 
-In [AndroidManifest.xml](/app/src/main/AndroidManifest.xml/), you can modify `"fullSensor"` in the code below 
+In [AndroidManifest.xml](/app/src/main/AndroidManifest.xml/), you can modify `"fullSensor"` in the code below, 
 
 ```html
 <activity android:name=".MainActivity" android:screenOrientation="fullSensor">
