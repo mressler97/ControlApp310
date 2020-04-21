@@ -15,4 +15,4 @@ In [AndroidManifest.xml](/app/src/main/AndroidManifest.xml/), you can modify `"f
         </intent-filter>
 </activity>
   ```
-  to lock screen orientation to `"landscape"` or `"portrait"`.
+  to `"landscape"` or `"portrait"` to lock screen orientation respectively.
