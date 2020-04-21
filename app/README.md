@@ -7,12 +7,12 @@ Read this if you want to edit the source code.
 In [AndroidManifest.xml](/app/src/main/AndroidManifest.xml/), you can modify `"fullSensor"` in the code below 
 
 ```java
-        <activity android:name=".MainActivity" android:screenOrientation="fullSensor">
-            <intent-filter>
+<activity android:name=".MainActivity" android:screenOrientation="fullSensor">
+        <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        </intent-filter>
+</activity>
   ```
   to lock screen orientation to `"landscape"` or `"portrait"`.
