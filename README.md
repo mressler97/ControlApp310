@@ -15,7 +15,7 @@ In Control Application:
   * Tap the 'Connect' button
     * Tap 'Disconnect' when finished with application
 
-### Tech
+## Tech
 Tech/devices used for this project:
 * HTC Desire Eye
     * Android Version: 5.0.2
@@ -24,7 +24,7 @@ Tech/devices used for this project:
 * HC-05 Bluetooth Module
 * Arduino Uno
 
-### Troubleshooting
+## Troubleshooting
 If there is a Gradle Migration Settings error, make sure this line
 ```java
 <component name="GradleMigrationSettings" migrationVersion="1" />
