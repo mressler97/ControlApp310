@@ -6,7 +6,7 @@ Read this if you want to edit the source code.
 
 In [AndroidManifest.xml](/app/src/main/AndroidManifest.xml/), you can modify `"fullSensor"` in the code below 
 
-```java
+```html
 <activity android:name=".MainActivity" android:screenOrientation="fullSensor">
         <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
