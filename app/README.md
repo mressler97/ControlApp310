@@ -3,7 +3,11 @@ The following files can be modified/edited to change application design/function
 
 ## App Functions (MainActivity)
 The [MainAcivity.java](/app/src/main/java/com/example/controlapp310/MainActivity.java/) is where the source code that can be edited to modify the application features and functions.  
-
+```java
+public class MainActivity extends AppCompatActivity {
+        ...
+}
+```
 ```java
         //OnTouchListener code for the reverse button (button long press)
         reverse_btn.setOnTouchListener(new View.OnTouchListener(){
