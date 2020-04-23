@@ -1,8 +1,3 @@
-module.exports = {
-  markdown: {
-    lineNumbers: true
-  }
-}
 # Source Code Editing
 The following files can be modified/edited to change application design/functionalities.
 
