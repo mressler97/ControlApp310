@@ -16,14 +16,34 @@
         android:id="@+id/forward_btn"
 
         android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@+id/forward_right_btn"
-        android:layout_toStartOf="@+id/forward_right_btn" />
+        android:layout_toLeftOf="@+id/right_btn"
+        android:layout_toStartOf="@+id/right_btn" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:text="F-Left"
+        android:id="@+id/forward_left_btn"
+
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/forward_btn"
+        android:layout_above="@+id/left_btn" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:text="F-Right"
+        android:id="@+id/forward_right_btn"
+
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/forward_btn"
+        android:layout_above="@+id/right_btn" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="80dp"
         android:text="LEFT"
-        android:id="@+id/forward_left_btn"
+        android:id="@+id/left_btn"
         android:layout_below="@+id/forward_btn"
         android:layout_toLeftOf="@+id/forward_btn"
         android:layout_toStartOf="@+id/forward_btn" />
@@ -32,7 +52,7 @@
         android:layout_width="wrap_content"
         android:layout_height="80dp"
         android:text="RIGHT"
-        android:id="@+id/forward_right_btn"
+        android:id="@+id/right_btn"
         android:layout_above="@+id/reverse_btn"
         android:layout_toRightOf="@+id/reverse_btn"
         android:layout_toEndOf="@+id/reverse_btn" />
@@ -42,9 +62,27 @@
         android:layout_height="80dp"
         android:text="REVERSE"
         android:id="@+id/reverse_btn"
-        android:layout_below="@+id/forward_left_btn"
+        android:layout_below="@+id/left_btn"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="0dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:text="R-Left"
+        android:id="@+id/reverse_left_btn"
+
+        android:layout_toLeftOf="@+id/reverse_btn"
+        android:layout_below="@+id/left_btn" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:text="R-Right"
+        android:id="@+id/reverse_right_btn"
+
+        android:layout_toRightOf="@+id/reverse_btn"
+        android:layout_below="@+id/right_btn" />
 
     <Button
         android:id="@+id/bluetooth_connect_btn"
@@ -61,4 +99,14 @@
         android:layout_alignParentBottom="true"
         android:text="DISCONNECT"
         android:layout_alignParentRight="true" />
+
+    <Switch
+        android:id="@+id/boost_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BOOST "
+        android:layout_below="@id/reverse_left_btn"
+        android:paddingTop="25dp"
+        android:paddingBottom="5dp"/>
+
 </RelativeLayout>

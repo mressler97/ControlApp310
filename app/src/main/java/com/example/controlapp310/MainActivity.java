@@ -15,14 +15,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
+import android.widget.Switch;
 import android.widget.Toast;
 import java.io.IOException;
 import java.util.UUID;
 
 public class MainActivity extends AppCompatActivity {
 
-    //variables for buttons and Bluetooth objects
-    Button forward_btn, forward_left_btn, forward_right_btn, reverse_btn, reverse_left_btn, reverse_right_btn, connect_btn, disconnect_btn;
+    //variables for buttons, switch and Bluetooth objects
+    Button forward_btn, left_btn, right_btn, forward_left_btn, forward_right_btn, reverse_btn, reverse_left_btn, reverse_right_btn, connect_btn, disconnect_btn;
+    Switch boost_switch;
     String address = null;
     String err = null;
     private ProgressDialog progress;
@@ -38,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
     {
         super.onCreate(savedInstanceState);
 
-        //Intent newint = getIntent();
         address = "98:D3:11:FC:48:82"; //receive the MAC address of the bluetooth device
 
         setContentView(R.layout.activity_main);
@@ -50,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         forward_left_btn = (Button) findViewById(R.id.forward_left_btn);
         forward_right_btn = (Button) findViewById(R.id.forward_right_btn);
         reverse_btn = (Button) findViewById(R.id.reverse_btn);
+        boost_switch = (Switch) findViewById(R.id.boost_switch);
         connect_btn = (Button) findViewById(R.id.bluetooth_connect_btn);
         disconnect_btn = (Button) findViewById(R.id.bluetooth_disconnect_btn);
 
@@ -74,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else if(event.getAction() == MotionEvent.ACTION_UP) //MotionEvent.ACTION_UP is when you release a button
                 {
-                    command = "10";
+                    command = "50";
                     try
                     {
                         Socket.getOutputStream().write(command.getBytes());
@@ -111,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else if(event.getAction() == MotionEvent.ACTION_UP)
                 {
-                    command = "10";
+                    command = "50";
                     try
                     {
                         Socket.getOutputStream().write(command.getBytes());
@@ -146,7 +149,42 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else if(event.getAction() == MotionEvent.ACTION_UP)
                 {
-                    command = "10";
+                    command = "50";
+                    try
+                    {
+                        Socket.getOutputStream().write(command.getBytes());
+                    }
+                    catch(IOException e)
+                    {
+                        msg("error");
+                    }
+
+                }
+                return false;
+            }
+        });
+
+        //OnTouchListener code for the reverse left button (button long press)
+        reverse_left_btn.setOnTouchListener(new View.OnTouchListener(){
+            @Override
+            public boolean onTouch(View v, MotionEvent event)
+            {
+                if(event.getAction() == MotionEvent.ACTION_DOWN)
+                {
+                    command = "4";
+
+                    try
+                    {
+                        Socket.getOutputStream().write(command.getBytes());
+                    }
+                    catch (IOException e)
+                    {
+                        msg("error");
+                    }
+                }
+                else if(event.getAction() == MotionEvent.ACTION_UP)
+                {
+                    command = "50";
                     try
                     {
                         Socket.getOutputStream().write(command.getBytes());
@@ -168,7 +206,7 @@ public class MainActivity extends AppCompatActivity {
             {
                 if(event.getAction() == MotionEvent.ACTION_DOWN)
                 {
-                    command = "4";
+                    command = "5";
 
                     try
                     {
@@ -181,7 +219,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else if(event.getAction() == MotionEvent.ACTION_UP)
                 {
-                    command = "10";
+                    command = "50";
                     try
                     {
                         Socket.getOutputStream().write(command.getBytes());
@@ -196,6 +234,144 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //OnTouchListener code for the reverse right button (button long press)
+        reverse_right_btn.setOnTouchListener(new View.OnTouchListener(){
+            @Override
+            public boolean onTouch(View v, MotionEvent event)
+            {
+                if(event.getAction() == MotionEvent.ACTION_DOWN)
+                {
+                    command = "6";
+
+                    try
+                    {
+                        Socket.getOutputStream().write(command.getBytes());
+                    }
+                    catch (IOException e)
+                    {
+                        msg("error");
+                    }
+                }
+                else if(event.getAction() == MotionEvent.ACTION_UP)
+                {
+                    command = "50";
+                    try
+                    {
+                        Socket.getOutputStream().write(command.getBytes());
+                    }
+                    catch(IOException e)
+                    {
+                        msg("error");
+                    }
+
+                }
+                return false;
+            }
+        });
+
+        //OnTouchListener code for the right button (button long press)
+        right_btn.setOnTouchListener(new View.OnTouchListener(){
+            @Override
+            public boolean onTouch(View v, MotionEvent event)
+            {
+                if(event.getAction() == MotionEvent.ACTION_DOWN)
+                {
+                    command = "7";
+
+                    try
+                    {
+                        Socket.getOutputStream().write(command.getBytes());
+                    }
+                    catch (IOException e)
+                    {
+                        msg("error");
+                    }
+                }
+                else if(event.getAction() == MotionEvent.ACTION_UP)
+                {
+                    command = "50";
+                    try
+                    {
+                        Socket.getOutputStream().write(command.getBytes());
+                    }
+                    catch(IOException e)
+                    {
+                        msg("error");
+                    }
+
+                }
+                return false;
+            }
+        });
+
+        //OnTouchListener code for the left button (button long press)
+        left_btn.setOnTouchListener(new View.OnTouchListener(){
+            @Override
+            public boolean onTouch(View v, MotionEvent event)
+            {
+                if(event.getAction() == MotionEvent.ACTION_DOWN)
+                {
+                    command = "8";
+
+                    try
+                    {
+                        Socket.getOutputStream().write(command.getBytes());
+                    }
+                    catch (IOException e)
+                    {
+                        msg("error");
+                    }
+                }
+                else if(event.getAction() == MotionEvent.ACTION_UP)
+                {
+                    command = "50";
+                    try
+                    {
+                        Socket.getOutputStream().write(command.getBytes());
+                    }
+                    catch(IOException e)
+                    {
+                        msg("error");
+                    }
+
+                }
+                return false;
+            }
+        });
+
+        //switch button that adjusts the vehicle's speed
+        boost_switch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked)
+                {
+                    // The toggle is enabled
+                    command = "9";
+
+                    try
+                    {
+                        Socket.getOutputStream().write(command.getBytes());
+                    }
+                    catch (IOException e)
+                    {
+                        msg("error");
+                    }
+                } else {
+                    // The toggle is disabled
+                    command = "10";
+
+                    try
+                    {
+                        Socket.getOutputStream().write(command.getBytes());
+                    }
+                    catch (IOException e)
+                    {
+                        msg("error");
+                    }
+                }
+            }
+        });
+
+        //OnClickListener code for the disconnect bluetooth button (button press)
         disconnect_btn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v)
@@ -209,7 +385,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //Button that connects the device to the bluetooth module when pressed
+        //OnClickListener code for connect button that connects device to Bluetooth module
         connect_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -230,10 +406,10 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(),err,Toast.LENGTH_LONG).show();
     }
 
-
-    private class ConnectBT extends AsyncTask<Void, Void, Void>  // UI thread
+    //ConnectBT class that establishes BT connection and checks for success/failure
+    private class ConnectBT extends AsyncTask<Void, Void, Void>
     {
-        private boolean ConnectSuccess = true; //if it's here, it's almost connected
+        private boolean ConnectSuccess = true;
 
         @Override
         protected void onPreExecute()
@@ -257,12 +433,12 @@ public class MainActivity extends AppCompatActivity {
             }
             catch (IOException e)
             {
-                ConnectSuccess = false;//if the try failed, you can check the exception here
+                ConnectSuccess = false;//Exception block if connection failed
             }
             return null;
         }
         @Override
-        protected void onPostExecute(Void result) //after the doInBackground, it checks if everything went fine
+        protected void onPostExecute(Void result) //confirms connection success/failure
         {
             super.onPostExecute(result);
 
