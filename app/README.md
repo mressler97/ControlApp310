@@ -3,27 +3,26 @@ The following files can be modified/edited to change application design/function
 
 ## App Functions (MainActivity)
 The [MainAcivity.java](/app/src/main/java/com/example/controlapp310/MainActivity.java/) is where the source code that can be edited to modify the application features and functions.  
-        forward_btn.setOnTouchListener(new View.OnTouchListener() {
+        //OnTouchListener code for the reverse button (button long press)
+        reverse_btn.setOnTouchListener(new View.OnTouchListener(){
             @Override
-            public boolean onTouch(View v, MotionEvent event) {
-
-
-                if (event.getAction() == MotionEvent.ACTION_DOWN) //MotionEvent.ACTION_DOWN is when you hold a button down
+            public boolean onTouch(View v, MotionEvent event)
+            {
+                if(event.getAction() == MotionEvent.ACTION_DOWN)
                 {
-                    command = "1";
-                    System.out.println("forward!\n" + command.getBytes());
+                    command = "2";
 
 
                     try
                     {
-                        Socket.getOutputStream().write(command.getBytes()); //transmits the value of command to the bluetooth module
+                        Socket.getOutputStream().write(command.getBytes());
                     }
                     catch (IOException e)
                     {
                         msg("error");
                     }
                 }
-                else if(event.getAction() == MotionEvent.ACTION_UP) //MotionEvent.ACTION_UP is when you release a button
+                else if(event.getAction() == MotionEvent.ACTION_UP)
                 {
                     command = "50";
                     try
@@ -37,12 +36,8 @@ The [MainAcivity.java](/app/src/main/java/com/example/controlapp310/MainActivity
 
 
                 }
-
-
                 return false;
             }
-
-
         });
 
 ## App Layout
