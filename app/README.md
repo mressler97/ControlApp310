@@ -1,4 +1,5 @@
 # Source Code Editing
+The following files can be modified/edited to change application design/functionalities.
 
 ## App Functions (MainActivity)
 The [MainAcivity.java](/app/src/main/java/com/example/controlapp310/MainActivity.java/) is where the source code that can be edited to modify the application features and functions.  
