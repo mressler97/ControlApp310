@@ -1,7 +1,6 @@
 # Source Code Editing
 
-Read this if you want to edit the source code. 
-* [MainAcivity file](/app/src/main/java/com/example/controlapp310/MainActivity.java/)
+The [MainAcivity.java](/app/src/main/java/com/example/controlapp310/MainActivity.java/) is where the source code that can be edited to modify the application features and functions.  
 
 ## App Layout
 [activity_main.xml](/app/src/main/res/layout/activity_main.xml/) file is the layout for the app. Buttons can be modified/adjusted here or more can be added. 
