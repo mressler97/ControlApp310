@@ -49,7 +49,7 @@ The [MainAcivity.java](/app/src/main/java/com/example/controlapp310/MainActivity
 ## App Orientation
 In [AndroidManifest.xml](/app/src/main/AndroidManifest.xml/), you can modify `"fullSensor"` in the code below, 
 
-```html{1}
+```html
 <activity android:name=".MainActivity" android:screenOrientation="fullSensor">
         <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
