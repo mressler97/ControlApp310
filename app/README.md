@@ -3,6 +3,7 @@ The following files can be modified/edited to change application design/function
 
 ## App Functions (MainActivity)
 The [MainAcivity.java](/app/src/main/java/com/example/controlapp310/MainActivity.java/) is where the source code that can be edited to modify the application features and functions.  
+https://github.com/mressler97/ControlApp310/blob/3fa9a027dc47a64c49674625a45fb766beaf7496/app/src/main/java/com/example/controlapp310/MainActivity.java#L60-L95
 
 ## App Layout
 [activity_main.xml](/app/src/main/res/layout/activity_main.xml/) file is the layout for the app. Buttons can be modified/adjusted here or more can be added. 
