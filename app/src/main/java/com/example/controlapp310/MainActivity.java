@@ -21,8 +21,7 @@ import java.util.UUID;
 
 public class MainActivity extends AppCompatActivity {
 
-    //private final String DEVICE_ADDRESS = "98:D3:11:FC:48:82"; //MAC Address of Bluetooth Module
-
+    //variables for buttons and Bluetooth objects
     Button forward_btn, forward_left_btn, forward_right_btn, reverse_btn, reverse_left_btn, reverse_right_btn, connect_btn, disconnect_btn;
     String address = null;
     String err = null;
@@ -40,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         //Intent newint = getIntent();
-        address = "98:D3:11:FC:48:82"; //receive the address of the bluetooth device
+        address = "98:D3:11:FC:48:82"; //receive the MAC address of the bluetooth device
 
         setContentView(R.layout.activity_main);
 
@@ -53,8 +52,6 @@ public class MainActivity extends AppCompatActivity {
         reverse_btn = (Button) findViewById(R.id.reverse_btn);
         connect_btn = (Button) findViewById(R.id.bluetooth_connect_btn);
         disconnect_btn = (Button) findViewById(R.id.bluetooth_disconnect_btn);
-
-                                //calls class to connect
 
         //OnTouchListener code for the forward button (button long press)
         forward_btn.setOnTouchListener(new View.OnTouchListener() {
@@ -219,7 +216,7 @@ public class MainActivity extends AppCompatActivity {
                 connect_btn.setOnClickListener(this);
                 if(Socket == null)
                 {
-                    new ConnectBT().execute();
+                    new ConnectBT().execute(); //calls class to connect Bluetooth
                 }
 
             }
@@ -241,7 +238,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected void onPreExecute()
         {
-            progress = ProgressDialog.show(MainActivity.this, "Connecting...", "Please wait!");  //show a progress dialog
+            progress = ProgressDialog.show(MainActivity.this, "Connecting...", "Seriously wait!");  //show a progress dialog
         }
 
         @Override
