@@ -2,7 +2,7 @@
 
 Read this if you want to edit the source code. 
 * [MainAcivity file](/app/src/main/java/com/example/controlapp310/MainActivity.java/)
-* [activity_main.xml](/app/src/main/res/layout/activity_main.xml/)
+* [activity_main.xml](/app/src/main/res/layout/activity_main.xml/) file is the layout for the app. Buttons can be modified/adjusted here or more can be added. 
 
 In [AndroidManifest.xml](/app/src/main/AndroidManifest.xml/), you can modify `"fullSensor"` in the code below, 
 
