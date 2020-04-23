@@ -4,14 +4,14 @@ The following files can be modified/edited to change application design/function
 ## App Functions (MainActivity)
 The [MainAcivity.java](/app/src/main/java/com/example/controlapp310/MainActivity.java/) is where the source code that can be edited to modify the application features and functions.  
 
-Within the onCreate function,
+Within the onCreate function
 ```java
     protected void onCreate(Bundle savedInstanceState)
     {
         ...
     }
 ```
-is where to add more functions if more buttons are added
+button functions can be added here. An example is the reverse button where a long press will send a value to the outputStream. Once the button is released, a different value is sent over telling the motors to stop. 
 ```java
         //OnTouchListener code for the reverse button (button long press)
         reverse_btn.setOnTouchListener(new View.OnTouchListener(){
