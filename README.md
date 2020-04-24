@@ -35,8 +35,8 @@ is within `\path\to\project\.idea\gradle.xml`.
 If you are interested in modifying the source code or interested how it is set up, read [README.md](/app/README.md).
 
 ### Works Cited
-
- - [Google](www.google.com)
+Fahad, Engr. “Android App Development to Control Arduino over Bluetooth, Android Studio.” Electronic Clinic, 13 Feb. 2020, www.electroniclinic.com/android-app-development-to-control-arduino-over-bluetooth-using-android-studio/.
+ - [Google](https://www.electroniclinic.com/android-app-development-to-control-arduino-over-bluetooth-using-android-studio/)
 
 
 
