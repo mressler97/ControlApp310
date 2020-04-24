@@ -1,6 +1,6 @@
 # EGEN 310 Control Application 
 
-> I worked along with four engineer students to design and build a Remote Control Vehicle (RCV) that is capable of navigating the Cat's Conundrum obstacle course for        EGEN310. This Android application connects to a HC-05 Bluetooth module running on an Arduino Uno. 
+> I worked along with four engineer students to design and build a Remote Control Vehicle (RCV) that is capable of navigating the Cat's Conundrum obstacle course for EGEN310. This Android application connects to a HC-05 Bluetooth module running on an Arduino Uno. 
 
 ## Installation
 
@@ -32,11 +32,12 @@ If there is a Gradle Migration Settings error, make sure this line
 is within `\path\to\project\.idea\gradle.xml`.
 
 ## Source Code 
-If you are interested in modifying the source code or interested how it is set up, read [README.md](/app/README.md).
+If you are interested in modifying the source code or interested how it is set up, go to [README.md](/app/README.md).
 
 ### Works Cited
+* https://developer.android.com/guide/topics/connectivity/bluetooth
+* Fahad, Engr. “Android App Development to Control Arduino over Bluetooth, Android Studio.” Electronic Clinic, 3 Aug. 2019,             www.electroniclinic.com/android-app-development-to-control-arduino-over-bluetooth-using-android-studio/.
 
- - [Google](www.google.com)
 
 
 
