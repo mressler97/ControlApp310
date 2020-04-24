@@ -34,6 +34,9 @@ is within `\path\to\project\.idea\gradle.xml`.
 ## Source Code 
 If you are interested in modifying the source code or interested how it is set up, go to [README.md](/app/README.md).
 
+## Images
+![prototype 1](images/proto1_ss.JPG)
+
 ### Works Cited
 * https://developer.android.com/guide/topics/connectivity/bluetooth
 * Fahad, Engr. “Android App Development to Control Arduino over Bluetooth, Android Studio.” Electronic Clinic, 3 Aug. 2019,             www.electroniclinic.com/android-app-development-to-control-arduino-over-bluetooth-using-android-studio/.
