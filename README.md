@@ -35,10 +35,9 @@ is within `\path\to\project\.idea\gradle.xml`.
 If you are interested in modifying the source code or interested how it is set up, go to [README.md](/app/README.md).
 
 ## Images
-Prototype 1:
+
 <img src="images/proto1_ss.JPG" height="500">
 
-ProtoType 2:
 <img src="images/proto2_ss.PNG" height="500">
 
 ### Works Cited
