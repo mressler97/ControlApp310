@@ -36,9 +36,7 @@ If you are interested in modifying the source code or interested how it is set u
 
 ## Images
 
-<img src="images/proto1_ss.JPG" height="500">
-
-<img src="images/proto2_ss.PNG" height="500">
+<img src="images/proto1_ss.JPG" height="500"> <img src="images/proto2_ss.PNG" height="500">
 
 ### Works Cited
 * https://developer.android.com/guide/topics/connectivity/bluetooth
