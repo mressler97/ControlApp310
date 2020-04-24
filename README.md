@@ -1,6 +1,6 @@
 # EGEN 310 Control Application 
 
-> I worked along with four engineer students to design and build a Remote Control Vehicle (RCV) that is capable of navigating the Cat's Conundrum obstacle course for        EGEN310. This Android application connects to a HC-05 Bluetooth module running on an Arduino Uno. 
+> I worked along with four engineer students to design and build a Remote Control Vehicle (RCV) that is capable of navigating the Cat's Conundrum obstacle course for EGEN310. This Android application connects to a HC-05 Bluetooth module running on an Arduino Uno. 
 
 ## Installation
 
