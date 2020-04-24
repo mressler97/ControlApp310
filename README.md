@@ -34,7 +34,7 @@ is within `\path\to\project\.idea\gradle.xml`.
 ## Source Code 
 If you are interested in modifying the source code or interested how it is set up, go to [README.md](/app/README.md).
 
-## Images
+## Prototypes
 <table>
   <tr>
     <td>Prototype 1</td>
