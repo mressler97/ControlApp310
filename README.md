@@ -35,7 +35,10 @@ is within `\path\to\project\.idea\gradle.xml`.
 If you are interested in modifying the source code or interested how it is set up, go to [README.md](/app/README.md).
 
 ## Images
-![prototype 1](images/proto1_ss.JPG)
+Prototype 1:
+<img src="images/proto1_ss.JPG" height="100">
+
+ProtoType2:
 ![prototype 2](images/proto2_ss.PNG)
 ### Works Cited
 * https://developer.android.com/guide/topics/connectivity/bluetooth
