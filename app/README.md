@@ -11,7 +11,7 @@ Within the onCreate function
         ...
     }
 ```
-button functions can be added here. An example is the reverse button where a long press will send a value to the outputStream. Once the button is released, a different value is sent over telling the motors to stop. 
+button functions can be added here. An example is the `reverse_button` where a long press will send a value to the outputStream. Once the button is released, a different value is sent over telling the motors to stop. 
 ```java
         //OnTouchListener code for the reverse button (button long press)
         reverse_btn.setOnTouchListener(new View.OnTouchListener(){
