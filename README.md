@@ -32,7 +32,7 @@ If there is a Gradle Migration Settings error, make sure this line
 is within `\path\to\project\.idea\gradle.xml`.
 
 ## Source Code 
-If you are interested in modifying the source code or interested how it is set up, read [README.md](/app/README.md).
+If you are interested in modifying the source code or interested how it is set up, go to [README.md](/app/README.md).
 
 ### Works Cited
 * https://developer.android.com/guide/topics/connectivity/bluetooth
