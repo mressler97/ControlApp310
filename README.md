@@ -37,7 +37,7 @@ If you are interested in modifying the source code or interested how it is set u
 ### Works Cited
 * https://developer.android.com/guide/topics/connectivity/bluetooth
 * Fahad, Engr. “Android App Development to Control Arduino over Bluetooth, Android Studio.” Electronic Clinic, 3 Aug. 2019,             www.electroniclinic.com/android-app-development-to-control-arduino-over-bluetooth-using-android-studio/.
- - [Google](https://www.electroniclinic.com/android-app-development-to-control-arduino-over-bluetooth-using-android-studio/)
+
 
 
 
