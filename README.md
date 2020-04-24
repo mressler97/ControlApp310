@@ -38,8 +38,9 @@ If you are interested in modifying the source code or interested how it is set u
 Prototype 1:
 <img src="images/proto1_ss.JPG" height="500">
 
-ProtoType2:
-![prototype 2](images/proto2_ss.PNG)
+ProtoType 2:
+<img src="images/proto2_ss.PNG" height="500">
+
 ### Works Cited
 * https://developer.android.com/guide/topics/connectivity/bluetooth
 * Fahad, Engr. “Android App Development to Control Arduino over Bluetooth, Android Studio.” Electronic Clinic, 3 Aug. 2019,             www.electroniclinic.com/android-app-development-to-control-arduino-over-bluetooth-using-android-studio/.
