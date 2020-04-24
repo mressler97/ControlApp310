@@ -36,7 +36,7 @@ If you are interested in modifying the source code or interested how it is set u
 
 ## Images
 Prototype 1:
-<img src="images/proto1_ss.JPG" height="100">
+<img src="images/proto1_ss.JPG" height="500">
 
 ProtoType2:
 ![prototype 2](images/proto2_ss.PNG)
