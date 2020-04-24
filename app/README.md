@@ -50,6 +50,9 @@ button functions can be added here. An example is the `reverse_button` where a l
             }
         });
 ```
+## Arduino Code
+I have also included the [Arduino_code](/arduino_code/arduino_code/arduino_code.ino/) our group used created by myself and Andy Maehl.
+Here motor speeds, servo adjustments, pins etc. can be modifed. The movement functions share the same name with the control application functions, respectively. Therefore, any function in the app can be found easily in this code for adjustments.
 
 ## App Layout
 [activity_main.xml](/app/src/main/res/layout/activity_main.xml/) file is the layout for the app. Buttons can be modified/adjusted here or more can be added. 
