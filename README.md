@@ -41,7 +41,7 @@ If you are interested in modifying the source code or interested how it is set u
     <td>Prototype 2</td>
   </tr>
   <tr>
-    <td><img src="images/proto1_ss.JPG" alt="Prototype 1" height="500" style="padding:100px"></td>
+    <td><img src="images/proto1_ss.JPG" alt="Prototype 1" height="500"></td>
     <td><img src="images/proto2_ss.PNG" alt="Prototype 2" height="500"></td>
   </tr>  
 </table>
